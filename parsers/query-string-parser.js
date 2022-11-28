@@ -1,5 +1,5 @@
 export class QueryStringParser {
-    static parseQueryParamsPart(queryParamsPart) {
+    static parse(queryParamsPart) {
         let res = {};
         const pairs = queryParamsPart.split('&');
         (pairs || []).map(x => {
