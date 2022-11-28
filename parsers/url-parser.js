@@ -9,7 +9,7 @@ export class UrlParser {
             ...this.parseUrlPart(routeUrl, routeUrlPart),
             ...QueryStringParser.parse(queryParamsPart)
         }
-        console.log(result)
+        return result;
     }
 
     static parseUrlPart(routeUrl, instanceUrl) {
